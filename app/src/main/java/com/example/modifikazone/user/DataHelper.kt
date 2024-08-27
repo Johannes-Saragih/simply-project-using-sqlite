@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import android.widget.Toast
 
 
-class DataHelper (var context: Context): SQLiteOpenHelper(context, "dataDIA", null,1) {
+class DataHelper (var context: Context): SQLiteOpenHelper(context, "your-database-name", null,1) {
     private var db = this.writableDatabase
 
     companion object{
