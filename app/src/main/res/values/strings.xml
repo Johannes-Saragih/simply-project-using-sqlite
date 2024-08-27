@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Modifikazone</string>
+
+    <string-array name="BengkelTerdekat">
+        <item>AUTO2000 Daan Mogot</item>
+        <item>AUTO2000 Kembangan</item>
+        <item>AUTO2000 Slipi</item>
+        <item>AUTO2000 Juanda</item>
+        <item>AUTO2000 Pramuka</item>
+        <item>AUTO2000 Salemba</item>
+        <item>AUTO2000 Sudirman</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragmentprofile"
+    android:background="@drawable/background3">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topbackpf"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="PROFIL"
+                app:titleTextColor="@color/black"
+                app:navigationIcon="@drawable/baseline_arrow_back"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="350dp"
+                    app:cardBackgroundColor="@color/white"
+                    android:foreground="@drawable/cardshape1"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_profile_circle"/>
+
+                            <TextView
+                                android:id="@+id/isinama"
+                                android:text="Nama Lengkap"
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                android:textAlignment="textStart"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/isiemail"
+                                android:text="Email"
+                                android:textSize="18dp"
+                                android:textAlignment="textStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunitosans_regular"/>
+
+                            <TextView
+                                android:id="@+id/isinohp"
+                                android:text="No.Handphone"
+                                android:textSize="18dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunitosans_regular"
+                                android:textAlignment="textStart" />
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/btnupdate"
+                                android:text="UPDATE"
+                                android:background="@drawable/btn_login_bg3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <Button
+                                android:id="@+id/btndelete"
+                                android:text="DELETE"
+                                android:background="@drawable/btn_login_bg3"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
